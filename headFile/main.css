@@ -1,0 +1,348 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+/* ::selection{
+    color: #fff;
+     background-color:rgb(0, 13, 255);
+ } */
+ 
+ ::-webkit-scrollbar{
+    width: 10px;
+ }
+ 
+ 
+ ::-webkit-scrollbar-track{
+    background-color: rgb(10, 189, 22);
+ }
+ 
+ ::-webkit-scrollbar-thumb{
+    background-color:rgb(234, 255, 0);
+    border-radius: 10px;
+ }
+
+
+
+
+
+
+
+
+
+
+
+.container{
+    max-width:1440px;
+    height: auto;
+    margin: auto;
+    position: relative;
+}
+
+
+
+
+
+
+
+/* ===========started styles of header=========== */
+header{
+    height: 120px;
+    width: 100%;
+    background: linear-gradient(90.49deg, #53269D 0%, #6D31D0 100.2%);
+    padding-top:18px;
+}
+
+
+.navlogo{
+    margin-left: 8px;
+}
+
+
+header nav  {
+    float: right;
+    margin-right:20px;
+}
+
+.nav{
+    width: 918px;
+    float: right;
+    vertical-align: middle;
+    margin-right: 280px;
+    margin-top: 35px;
+}
+
+.nav__item {
+    display: inline-block;
+    text-transform: uppercase;
+    margin-right: 34px;
+    margin-left: 24px;
+}
+
+.nav__item a{
+    color: white;
+}
+
+button{
+    position: absolute;
+    right: 0;
+    width: 120px;
+    height: 44px;
+    color:#6D31D0;
+    border-radius: 30px;
+    padding: 9px 24px 9px 24px;
+    border: none;
+    background-color: #FFDB80;
+    margin-top: 18px;
+    margin-right: 8px;
+}
+
+
+.chek{
+    position: absolute;
+    right: 0;
+    margin-right: 200px;
+    z-index: 1;
+    width: auto;
+    height: auto;
+    top: 34px;
+    color: white;
+    display: none;
+}
+
+
+.checkbox{
+    opacity: 0;
+}
+
+.servis{
+    width: 10px;
+    height: 60px;
+    background-color:rgba(0, 0, 255, 0);
+}
+
+.dropdown{
+    position: absolute;
+    width: 280px;
+    height: 180px;
+    background-color: rgba(5, 18, 5, 0.361);
+    padding: 36px 4px 20px 4px;
+    text-align: center;
+    margin-left:-94px;
+    z-index: 1;
+    display:none;
+    top:80px;
+    border-radius:0px 24px 0px 24px;
+   
+   
+}
+
+.dropdown .dropdown__item {
+    margin-top: 12px;
+}
+
+
+.nav__item:hover .dropdown{
+    position: absolute;
+    width: 280px;
+    height: 180px;
+    background-color: rgba(16, 23, 16, 0.731);
+    padding: 36px 4px 20px 4px;
+    text-align: center;
+    margin-left:-94px;
+    z-index: 1;
+    display:block;
+    transition: 0.5s;
+}
+.chek{
+    display: none;
+}
+/* ===========endeded styles of header=========== */
+
+
+
+
+.intro__main-section{
+    background-image: url(./images/foto1.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height:1001px;
+    background-color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only  screen and (max-width:1320px) {
+    .nav{
+        width: 810px;
+        float: right;
+        vertical-align: middle;
+        margin-right: 180px;
+        margin-top: 35px;  
+    }
+
+
+    .nav__item {
+        display: inline-block;
+        text-transform: uppercase;
+        margin-right: 24px;
+        margin-left: 14px;
+    }
+
+    button{
+        margin-right: 8px;
+    }
+}
+
+@media only  screen and (max-width:1140px) {
+    .nav{
+        width:700px;
+        float: right;
+        vertical-align: middle;
+        margin-right: 150px;
+        margin-top: 35px;
+    }
+
+
+    .nav__item {
+        display: inline-block;
+        text-transform: uppercase;
+        margin-right: 14px;
+        margin-left: 6px;
+    }
+
+}
+
+
+
+
+
+
+@media screen and (max-width:992px) {
+    .chek{
+        position: absolute;
+        right:-120px;
+        z-index: 1;
+        width: auto;
+        height: auto;
+        top: 34px;
+        display:block;
+
+        transition: 0.5s;
+}
+
+    button{
+        position: absolute;
+        width: 132px;
+        height: 48px;
+        color:#6D31D0;
+        border-radius: 30px;
+        padding: 9px 24px 9px 24px;
+        border: none;
+        background-color: #FFDB80;
+        margin-top: 18px;
+        margin-right: 200px;
+    }
+    
+
+
+
+
+
+    .nav{
+        background-color: rgb(0, 0, 0);
+        width:300px;
+        height: 320px;
+        position: absolute;
+        top:67px;
+        left: -100%;
+        transition: ease 1s;
+}
+
+
+    .lines:checked ~ .nav{
+        .nav{
+            background-color: rgb(198, 72, 72);
+            width:300px;
+            height: 320px;
+            position: absolute;
+            /* right: -140px; */
+            top:67px;
+             }
+    }
+
+
+
+    .nav .nav__item{
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+
+
+
+    #check:checked ~ .nav{
+        width: 100%;
+        height: 300px;
+        position: absolute;
+        left: 0;
+        top:67px;
+    }
+
+
+
+    .servis{
+        width: 10px;
+        height: 20px;
+        background-color:rgba(0, 0, 255, 0);
+    }
+
+
+
+    .dropdown{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+  
+}
