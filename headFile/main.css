@@ -15,10 +15,7 @@
 
 
 
-/* ::selection{
-    color: #fff;
-     background-color:rgb(0, 13, 255);
- } */
+
  
  ::-webkit-scrollbar{
     width: 10px;
@@ -74,14 +71,17 @@ header{
 header nav  {
     float: right;
     margin-right:20px;
+    
 }
 
 .nav{
-    width: 918px;
+    width: 910px;
+    height: auto;
     float: right;
     vertical-align: middle;
     margin-right: 280px;
-    margin-top: 35px;
+    margin-top: 35px;    
+       z-index: 1000;
 }
 
 .nav__item {
@@ -93,6 +93,9 @@ header nav  {
 
 .nav__item a{
     color: white;
+    font-weight: 500;
+    font-size: 16px;
+    font-family:'Avenir Next' ,sans-serif;
 }
 
 button{
@@ -153,6 +156,10 @@ button{
     margin-top: 12px;
 }
 
+.dropdown__item a:hover{
+    text-decoration: underline;
+}
+
 
 .nav__item:hover .dropdown{
     position: absolute;
@@ -174,13 +181,841 @@ button{
 
 
 
+
+
+
+
+
+/*============started styles of intro__main-section=============*/
 .intro__main-section{
     background-image: url(./images/foto1.webp);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     height:1001px;
-    background-color: red;
+    position: absolute;
+}
+
+.intro__main-section .container{
+    max-width: 1440px;
+    height: 800px;
+    position: relative;
+    top: 0;
+}
+ 
+.card1{
+    width: 560px;
+    height: 296px;
+    position: absolute;
+    margin-top: 130px;
+    margin-left: 18px;
+}
+
+.spans{
+    padding: 0 6px 0 6px;
+    height: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align:center;
+    color: #FFDB80;
+    width: 100%;
+    justify-content: space-around;
+    display: flex;
+}
+
+.span1{
+    width: 128px;
+    background: #6e31d0a2;
+    border-radius: 10px;
+}
+
+.span2{
+    width: 206px;
+    background: #6e31d0a2;
+    border-radius: 10px;
+}
+
+.span3{
+    width: 186px;
+    background: #6e31d0a2;
+    border-radius: 10px;
+}
+
+
+.h2andh4 {
+    width: 400px;
+    height:auto;
+    margin-left: 0;
+    margin-top: 34px;
+    line-height: 34px;
+}
+
+.h2andh4 h2 , h4{
+    display: inline-block;
+    color: #FFFFFF;
+}
+
+.h2andh4 h2{
+    font-size: 38px;
+    font-weight: 600;
+    font-family: ' Montserrat' , sans-serif;
+}
+
+.h2andh4 h4{
+    font-size: 22px;
+    font-weight: 500;
+    font-family: ' Montserrat' , sans-serif;
+}
+
+.card1 p{
+    font-family:'Avenir Next' ,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-align: left;
+    margin-top: 16px;
+    width: 520px;
+    height: 120px;
+    color: #FFFFFF;
+}
+
+
+.card1 button {
+    width: 200px;
+    height: 48px;
+    background: linear-gradient(96.1deg, #FFEB80 -22.07%, #FDBFA3 123.25%);
+    color: #6D31D0;
+    position: absolute;
+    left:0;
+    bottom:-24px;
+    font-family: ' Montserrat' , sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.cities{
+      width: 700px;
+      height: 213px;
+      position: absolute;
+      margin-top: 188px;
+      left: 0;
+      display: flex;
+      justify-content: space-between;  
+}
+
+.cities .city{
+    width: 146px;
+    height: 180px;
+    margin-top: 28px;
+    background-color: #FFFFFF;
+    padding: 8px 8px 0 8px;
+    border-radius:12px;
+}
+
+.city h4{
+    color:#828CDE;
+    font-family: ' Montserrat' , sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+/*============ended styles of intro__main-section=============*/
+
+
+
+
+
+
+
+/*=============started card of main section=============*/
+.cardof__main{
+    position: relative;
+     width: 100%;
+     height: 785px;
+     background: linear-gradient(180deg, #828CDE -21.43%, #6D31D0 201.93%);
+     margin-top: 1000px;
+
+}  
+
+
+.cardof__main .container{
+    height: 785px;
+}
+
+.cardof__main .container h2{
+    width:100%;
+    text-align: center;
+    font-family:'Avenir Next' ,sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: 0px;
+    text-align: center;
+    top: 80px;
+    position: absolute;
+    color: #FFFFFF;
+}
+
+.border {
+    width: 100%;
+    height:6px;
+    margin-top: 130px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+.border hr{
+    width: 380px;
+    background: #FDBFA3;
+}
+
+.servis__imgs{
+    width:100%;
+    height: 515px;
+    position: absolute;
+    bottom:56px;
+    display: flex;
+    justify-content: space-between;
+    font-family:'Avenir Next' ,sans-serif;
+    padding: 0 18px 0 18px;
+}
+
+.servis__imgs .servis__img{
+    width: 380px;
+    height: 515px;
+    background: #FFFFFF;
+    border-radius: 20px;
+}
+
+
+.servis__imgs .servis__img img{
+    width: 100%;
+}
+
+
+.servis__imgs .servis__img h3{
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #434364;
+}
+
+.servis__imgs .servis__img h5{
+    width: 320px;
+    height: 64px;
+    margin: 24px 34px 0 34px;
+    text-align: center;
+    color: #434364;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+}
+
+.servis__imgs .servis__img .button1{
+    width: 200px;
+    height: 48px;
+    Padding:26px, 22px, 16px, 22px;
+    border-radius: 88px;
+    background: linear-gradient(96.1deg, #FFEB80 -22.07%, #FDBFA3 123.25%);
+    font-family: ' Montserrat' , sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    margin-left: 90px;
+    position: absolute;
+    bottom: 12px;
+}
+
+.servis__imgs .servis__img .button1 p{
+    margin-left: 32px;
+}
+
+.servis__imgs .servis__img .button2{
+    width: 200px;
+    height: 48px;
+    Padding:26px, 22px, 16px, 22px;
+    border-radius: 88px;
+    background: linear-gradient(96.1deg, #FFEB80 -22.07%, #FDBFA3 123.25%);
+    font-family: ' Montserrat' , sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    margin-left: 90px;
+    position: absolute;
+    bottom: 12px;
+}
+.servis__imgs .servis__img .button2 p{
+    margin-left: 32px;
+}
+
+.servis__imgs .servis__img .button3{
+    width: 200px;
+    height: 48px;
+    Padding:26px, 22px, 16px, 22px;
+    border-radius: 88px;
+    background: linear-gradient(96.1deg, #FFEB80 -22.07%, #FDBFA3 123.25%);
+    font-family: ' Montserrat' , sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    margin-left: 90px;
+    position: absolute;
+    bottom: 12px;
+}
+
+.servis__imgs .servis__img .button3 p{
+    margin-left: 32px;
+}
+/*=============started card of main section=============*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*=============== started styles of .main__setion-info ===============*/
+.main__setion-info{
+    width: 100%;
+    height: 660px;
+    background: #FFFFFF;
+}
+
+.mg1ofmaininfo{
+    position: absolute;
+    left: 0;
+    margin-top: 80px;  
+}
+
+
+.all__kontainer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.info__kontainer{
+    width: 480px;
+    height: 448px;
+    margin-top: 120px;
+}
+
+.img__kontainer{
+    width: 410px;
+    height: 500px;
+}
+
+.info__kontainer h2{
+    font-family:'Avenir Next' ,sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 29px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #434364;
+}
+
+.info__kontainer p{
+    font-family:'Avenir Next' ,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: #434364;
+    width: 480px;
+    height: 377px;
+     margin-top: 34px;
+}
+
+
+.mg2ofmaininfo{
+    position: absolute;
+    right: 0;
+    margin-top: 80px; 
+}
+
+.button0f__b{
+    width: 200px;
+    height: 48px;
+    border-radius:88px;
+    background: linear-gradient(96.1deg, #FFEB80 -22.07%, #FDBFA3 123.25%);
+    padding-top: 12px;
+    padding-left: 12px;
+    font-family:'Avenir Next' ,sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-left:140px;
+    margin-top: -48px;
+}
+/*=============== ended styles of .main__setion-info ===============*/
+
+
+
+
+
+
+
+
+
+/*=================started styles of choose__section=================*/
+.choose__section{
+    width: 100%;
+    height: 672px;
+    background: linear-gradient(180deg, #FEFC9E -47.89%, #FDBFA3 126.42%);
+    padding-bottom: 64px;
+}
+
+.choose__section .container{
+    height: 672px;
+    position: relative;
+}
+
+.choose__section-h1{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    margin-top: 64px;
+    position: absolute;
+}
+
+
+.choose__section-h1 h1{
+    font-family:'Avenir Next' ,sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #434364;
+}
+
+
+.choose__section-p{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+    position: absolute;
+}
+
+.choose__section-p p {
+    width: 580px;
+    height: 94px;
+    text-align: center;
+    font-family:'Avenir Next' ,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: #434364;
+}
+
+
+.sircls__cont{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.choose__section-cirkls{
+    width:100%;
+    margin-top: 240px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.choose__section-cirkls img{
+    width: 150px;
+    height: 150px;
+}
+
+
+.sircls__cont-h4{
+    width: 100%;
+    height:auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.choose__section-cirklsh4{
+    width: 100%;
+    display: flex;
+    justify-content: space-around; 
+}
+
+.choose__section-cirklsh4 h4{
+    font-family:'Montserrat' ,sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #6D31D0;
+    width:240px;
+    height: 30px;
+}
+
+
+.sircls__cont-p{
+    width: 100%;
+    height:auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.choose__section-cirklshp{
+    width: 100%;
+    display: flex;
+    justify-content: space-around; 
+}
+
+.choose__section-cirklshp p{
+    width: 280px;
+    height: 48px;
+    font-family: 'Avenir Next' , sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+/*=================ended styles of choose__section=================*/
+
+
+
+
+
+
+/* ==================Started styles of map section================== */
+.map__section{
+    width: 100%;
+    height: 718px;
+    background-color:rgb(255, 252, 243);
+    font-family: 'Monserrat' , sans-serif;
+}
+
+
+.map__section .container{
+    height: 718px;
+}
+
+.map__section h1{
+    position: absolute;
+    left: 46px;
+    top: 34px;
+    color: #6D31D0;
+    font-size: 32px;
+}
+
+.map__section h5{
+    color:#434364;
+    position: absolute;
+    left: 46px;
+    top: 80px;
+    font-size: 28px;
+}
+
+.map__section .map1{
+    width: 790px;
+    height: auto;
+    display: inline-block;
+    position: absolute;
+    left: 46px;
+    top: 120px;
+}
+
+.map__section-limassol{
+    width: 480px;
+    height: 660px;
+    background-color: #FFFFFF;
+    position: absolute;
+    right: 90px;
+    top: 24px;
+    border-radius: 20px;
+    box-shadow:0px 0px 24px rgba(0, 0, 0, 0.283);
+}
+
+.limasso__fotos{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.map__section h3{
+    text-align: center;
+    margin-top: 34px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #434364;
+    
+}
+
+
+.map__section p{
+    width: 380px;
+    height: 406px;
+    font-family: 'Avenir Next' , sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    margin-top:10px;
+    margin-left: 50px;
+}
+/* ==================Ended styles of map section================== */
+
+ 
+
+
+
+
+/*===========started styles of who we are section ===========*/
+ .who__weare-section{
+    width: 100%;
+    height: 518px;
+    background: linear-gradient(180deg, #828CDE -21.43%, #6D31D0 201.93%);
+    
+ }
+
+ .who__weare-section .container{
+    height: 518px; 
+ }
+
+ .who__weare-section h2 {
+    font-family: 'Avenir Next' , sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #FFFFFF;
+    position: absolute;
+    left: 46px;
+    top: 64px;
+ }
+
+   .who__weare-section hr{
+    width: 290px;
+    height: 4px;
+    background: #FDBFA3;
+    border: none;
+    margin-top: 46px;
+    position: absolute;
+    top: 64px;
+   }
+
+   .who__weare-section h5{
+    width: 480px;
+    height:auto;
+    position: absolute;
+    left: 46px;
+    top: 136px;
+    font-family: 'Avenir Next' , sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: #FFFFFF;
+   }
+
+   .who__weare-section .abtn {
+    width: 180px;
+    height: 48px;
+    background: #FFDB80;
+    position: absolute;
+    left: 46px;
+    bottom: 70px;
+   }
+
+
+   .who__weare-section .founder {
+    width: 580px;
+    height: 440px;
+    background: #ffffffce;
+    position: absolute;
+    right: 90px;
+    border-radius: 20px;
+    top: 44px;
+}
+
+.founder img{
+    position: absolute;
+     height: 400px;
+     width: auto;
+     top: 20px;
+     left: 20px;
+   }
+
+
+   .founder span{
+    font-family: 'Montserrat' , sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0em;
+    position: absolute;
+    right: 144px;
+    top: 54px;
+    color: #6D31D0;
+   }
+
+   .founder h5{
+    font-family: 'Avenir Next' , sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-align: right;
+    color: #434364;
+    position: absolute; 
+    top: 94px;
+   }
+
+   .founder button{
+      width: 147px;
+      height: 50px;
+      position: absolute;
+      right: 110px;
+      top: 120px;
+      font-family: 'Montserrat' , sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 22px;
+      letter-spacing: 0px;
+      text-align: center;
+      box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.129); 
+   }
+
+/*===========ended styles of who we are section ===========*/
+
+
+
+
+
+/*==============started styles of happen section ==============*/
+.happen__section{
+    width: 100%;
+    height: 588px;  
+    background: linear-gradient(180deg, #FEFC9E -47.89%, #FDBFA3 126.42%);
+}
+
+.happen__section .container{
+    height: 588px;
+    padding-top: 58px;
+}
+
+.happen__section h2{
+    text-align: center;
+     
+     text-transform: uppercase;
+     font-family: 'Avenir Next' , sans-serif;
+     font-size: 36px;
+     font-weight: 600;
+     letter-spacing: 0px;
+     text-align: center;
+     
+}
+
+.happen__circls{
+    width: 100%;
+    height:auto;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 48px;
+}
+.happen__circls img{
+    width: 120px;
+    height:120px;
+}
+
+.happen__cirklh4{
+    width: 100%;
+    height:auto;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 34px;
+}
+
+.happen__cirklh4 h4{
+    font-family: 'Montserrat' , sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #6D31D0;
+    margin-left: 30px;
+}
+
+.happen__cirkl-p{
+    width: 100%;
+    height:auto;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 34px;
+}
+
+.happen__cirkl-p p{
+    font-family: 'Avenir Next' sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    width: 250px;
+    height: 96px;
+    margin-left: 34px;
+}
+/*==============ended styles of happen section ==============*/
+
+
+
+
+/* ============= */
+
+.contact1__section{
+    width: 100%;
+    height: 1120px;
+    background: linear-gradient(180deg, rgba(109, 49, 208, 0.1) 0%, rgba(109, 49, 208, 0.21) 28.65%, rgba(109, 49, 208, 0.475) 53.12%, #6D31D0 100%);
+   
 }
 
 
@@ -192,32 +1027,13 @@ button{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media only  screen and (max-width:1320px) {
+@media only  screen and (max-width:1340px) {
     .nav{
         width: 810px;
         float: right;
         vertical-align: middle;
         margin-right: 180px;
-        margin-top: 35px;  
+        margin-top: 35px; 
     }
 
 
@@ -257,7 +1073,7 @@ button{
 
 
 
-@media screen and (max-width:992px) {
+@media screen and (max-width:996px) {
     .chek{
         position: absolute;
         right:-120px;
@@ -345,4 +1161,71 @@ button{
         bottom: 0;
     }
   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:576px){
+     .navlogo{
+        width: 64px;
+        height: auto;
+        margin-top: 4px;
+     }
+
+
+     button{
+        position: absolute;
+        right: 0;
+        width:100px;
+        height: 34px;
+        color:#6D31D0;
+        border-radius: 30px;
+        padding: 9px 14px 9px 14px;
+        border: none;
+        background-color: #FFDB80;
+        margin-top: 8px;
+        margin-right: 108px;
+        font-size: 12px;
+    }
+
+
+
+
+    .chek{
+        position: absolute;
+        right: 0;
+        margin-right: 200px;
+        z-index: 1;
+        width: auto;
+        height: auto;
+        top: 18px;
+        color: white;
+        left: 260px;
+        right: -200px;
+    }
+    
+
+
+    .nav{
+        background-color: rgb(0, 0, 0);
+        width:300px;
+        height: 320px;
+        position: absolute;
+        top:67px;
+        left: -110%;
+        transition: ease 1s;
+}
+
+
+
 }
